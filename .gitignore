@@ -1,0 +1,4 @@
+# Project exclude paths
+.idea
+/src/main/java/db/config
+#/src/main/resources
