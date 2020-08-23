@@ -1,12 +1,5 @@
 package base;
 
-import javax.servlet.http.HttpServletRequest;
-import java.io.UnsupportedEncodingException;
-import java.net.InetAddress;
-import java.net.UnknownHostException;
-import java.util.Random;
-import java.util.regex.Pattern;
-
 /**
  * 字符串工具类
  * @author lmc
@@ -33,8 +26,8 @@ public class StringMagicBox {
     /*
     字符串为空
      */
-    public static boolean isEmpty(CharSequence cs) {
-        return cs == null || cs.length() == 0;
+    public static boolean isEmptyStr(CharSequence cs) {
+        return cs != null && cs.length() == 0;
     }
 
     public static boolean isBlank(CharSequence cs) {

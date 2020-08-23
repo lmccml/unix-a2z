@@ -1,9 +1,6 @@
 package db;
 
-import db.mapper.CURDMapper;
-import model.UserInfo;
 import org.mybatis.spring.annotation.MapperScan;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.Banner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -16,9 +13,9 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @SpringBootApplication
 @EnableScheduling
 @MapperScan("db/mapper")
-public class MagicBoxBoot {
+public class Boot {
     public static void main(String[] args) {
-        SpringApplication springApplication = new SpringApplication(MagicBoxBoot.class);
+        SpringApplication springApplication = new SpringApplication(Boot.class);
         springApplication.setBannerMode(Banner.Mode.OFF);
         springApplication.run(args);
 
